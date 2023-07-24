@@ -1,1 +1,1 @@
-# webpack-pug-node-boilerplate
+start with: npm start
