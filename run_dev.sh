@@ -1,4 +1,7 @@
 #!/bin/sh
 
+rm -rf ./dist
+mkdir ./dist
 npm run watch &
-node ./app/server/app.js
+cp ./src/server/* ./dist
+node ./dist/app.js

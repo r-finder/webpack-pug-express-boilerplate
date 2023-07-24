@@ -8,10 +8,10 @@ const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const app = express();
 const port = 3000;
 
-app.use(express.static('./dist'));
+app.use(express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
-  const tmplFile = './dist/index.html';
+  const tmplFile = './static/index.html';
   const tmplPath = path.join(__dirname, tmplFile);
 
   res.sendFile(tmplPath);

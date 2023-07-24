@@ -2,7 +2,7 @@ const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 const PATHS = {
-  output: path.join(__dirname, './dist/'),
+  output: path.join(__dirname, './dist/static/'),
 };
 
 const web = (env, argv) => {
@@ -29,16 +29,16 @@ const web = (env, argv) => {
 
     resolve: {
       alias: {
-        '@images': path.join(__dirname, 'app/client/assets/images/'),
-        '@fonts': path.join(__dirname, 'app/client/assets/fonts/'),
-        '@scripts': path.join(__dirname, 'app/client/assets/js/'),
-        '@styles': path.join(__dirname, 'app/client/assets/styles/'),
-        '@views': path.join(__dirname, 'app/client/views/'),
+        '@images': path.join(__dirname, './src/client/assets/images/'),
+        '@fonts': path.join(__dirname, './src/client/assets/fonts/'),
+        '@scripts': path.join(__dirname, './src/client/assets/js/'),
+        '@styles': path.join(__dirname, './src/client/assets/styles/'),
+        '@views': path.join(__dirname, './src/client/views/'),
       },
     },
 
     entry: {
-      index: './app/client/views/index.pug',
+      index: './src/client/views/index.pug',
     },
 
     plugins: [
