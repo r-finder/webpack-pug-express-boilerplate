@@ -18,11 +18,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/getdata', (req, res) => {
-  let result = { data: [
-    ['x1', 'x2', 'x3'],
-    ['x1', 'x2', 'x3'],
-    ['x1', 'x2', 'x3'],
-  ]};
+  let result = { 
+    headers: ['x1', 'x2', 'x3'],
+    rows: [
+      ['x1', 'x2', 'x3'],
+      ['x1', 'x2', 'x3'],
+      ['x1', 'x2', 'x3'],
+    ]
+  };
   res.send(result);
 })
 
