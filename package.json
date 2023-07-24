@@ -9,7 +9,7 @@
   "autor": "",
   "type": "module",
     "scripts": {
-    "start": "./run_dev.sh", 
+    "start": "bash ./run_dev.sh", 
     "watch": "webpack watch --mode=development --progress",
     "build": "webpack --mode=production --progress",
     "test": "jest"
