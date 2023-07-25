@@ -27,19 +27,18 @@ const web = (env, argv) => {
       publicPath: '/',
     },
 
-    resolve: {
-      alias: {
-        '@images': path.join(__dirname, './src/client/assets/images/'),
-        '@fonts': path.join(__dirname, './src/client/assets/fonts/'),
-        '@scripts': path.join(__dirname, './src/client/assets/js/'),
-        '@styles': path.join(__dirname, './src/client/assets/styles/'),
-        '@views': path.join(__dirname, './src/client/views/'),
-      },
-    },
-
     entry: {
       index: './src/client/views/index.pug',
-      test: './src/client/views/test.pug',
+    },
+
+    resolve: {
+      alias: {
+        '@images': path.join(__dirname, './src/client/images/'),
+        '@fonts': path.join(__dirname, './src/client/fonts/'),
+        '@scripts': path.join(__dirname, './src/client/scripts/'),
+        '@styles': path.join(__dirname, './src/client/styles/'),
+        '@views': path.join(__dirname, './src/client/views/'),
+      },
     },
 
     plugins: [
