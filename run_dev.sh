@@ -3,5 +3,5 @@
 rm -rf ./dist
 mkdir ./dist
 npm run watch &
-cp ./src/server/* ./dist
+cp -r ./src/server/* ./dist
 node ./dist/app.js
