@@ -58,7 +58,7 @@ const web = (env, argv) => {
         {
           test: /\.pug$/,
           oneOf: [
-            // import Pug in JavaScript/TypeScript as template function
+            // imports Pug in JavaScript/TypeScript as template function. If you want to use client-side templates
             {
               issuer: /\.(js|ts)$/,
               loader: PugPlugin.loader,
@@ -66,7 +66,7 @@ const web = (env, argv) => {
                 method: 'compile',
               },
             },
-            // render Pug from Webpack entry into static HTML
+            // renders Pug from Webpack entry into static HTML
             {
               loader: PugPlugin.loader,
             },
