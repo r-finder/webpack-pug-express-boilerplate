@@ -1,11 +1,5 @@
 class HomeController {
-    constructor(staticPath) {
-      this.staticPath = staticPath;
-    }
-
-    getIndex(req, res) {
-      const tmplPath = path.join(this.staticPath, "index.html");
-      res.sendFile(tmplPath);
+    constructor() {
     }
 
     getData(req, res) {

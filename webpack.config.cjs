@@ -39,6 +39,7 @@ const web = (env, argv) => {
 
     entry: {
       index: './src/client/views/index.pug',
+      test: './src/client/views/test.pug',
     },
 
     plugins: [
