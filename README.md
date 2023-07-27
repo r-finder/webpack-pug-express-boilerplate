@@ -1,9 +1,9 @@
 The template Node.JS project, featuring following:
+- Pug-based compiled client-side templates (using [pug-plugin](https://github.com/webdiscus/pug-plugin))
 - Express-based server app
 - Webpack for the static content
 - Pug-based static views
 - SASS-based styles
-- Pug-based compiled client-side templates (using pug-plugin)
 
 ## Usage:
 
