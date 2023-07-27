@@ -16,6 +16,5 @@ app.use(express.static(app.staticPath));
 registerRoutes(app);
 
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`)
-})
-
+  console.log(`App listening on port ${port}`);
+});

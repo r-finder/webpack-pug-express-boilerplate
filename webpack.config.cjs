@@ -1,4 +1,4 @@
-const path = require('path'); 
+const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 const PATHS = {
