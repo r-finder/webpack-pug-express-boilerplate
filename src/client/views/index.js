@@ -9,7 +9,7 @@ class App {
 
     // Example filling a datatable using a precompiled client-side template (pug-plugin)
     static fillDatatable = (selector) => {
-        const url = '/getdata';
+        const url = '/getSampleData';
   
         fetch(url, {
           method: 'GET',

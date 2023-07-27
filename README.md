@@ -17,9 +17,3 @@ npm start
 ```
 Then go to http://localhost:3000
 
-
-
-## Todo
-- server side pugs for view templates
-- add server side logging
-- add authentication middleware
